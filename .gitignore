@@ -1,0 +1,5 @@
+// gitignore file for the project
+node_modules
+dist
+.DS_Store
+.parcel-cache

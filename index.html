@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Black Jack</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <p id="title">Black Jack</p>
+
+    <h2>Marit: <span id="marit-sum"></span></h2>
+    <div id="marit-cards"></div>
+
+    <h2>You: <span id="player-sum"></span></h2>
+    <div id="player-cards"></div>
+
+    <br />
+    <button id="hit">Hit</button>
+    <button id="pass">Pass</button>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <p id="dialogText"></p>
+        <p class="result-name">Marit: <span id="marit-sum-result"></span></p>
+        <p class="result-name">You: <span id="player-sum-result"></span></p>
+        <button id="restart">Restart</button>
+      </div>
+    </div>
+  </body>
+</html>

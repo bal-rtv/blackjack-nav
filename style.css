@@ -1,0 +1,73 @@
+:root {
+  --bg-color: #15053a;
+  --text-color: #eee8d6;
+  --border-color: #eee8d6;
+  --button-color: #eee8d6;
+  --button-text-color: #15053a;
+  --button-border-color: #eee8d6;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: center;
+}
+
+#title{
+  font-size: 74.6px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+#marit-cards img {
+  height: 175px;
+  width: 125px;
+  margin: 1px;
+}
+
+#player-cards img {
+  height: 175px;
+  width: 125px;
+  margin: 1px;
+}
+
+#hit, #pass, #restart {
+  font-family: 'Source Code Pro', monospace;
+  width: 120px;
+  height: 50px;
+  font-size: 20px;
+}
+
+#restart{
+  font-weight: bolder;
+  background-color: rgb(146, 158, 146);
+  color: green;
+  border: 1px solid var(--button-border-color);
+} 
+
+#marit-sum-result, #player-sum-result{
+  font-size: 24px;
+}
+
+/* The Modal */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Overlay background */
+}
+
+/* Modal Box */
+.modal-content {
+  font-size: 30px;
+  background-color: var(--bg-color);
+  margin: 15% auto; 
+  padding:  60px 20px;
+  border: 1px solid var(--border-color);
+  width: 50%;
+  text-align: center;
+}
+
