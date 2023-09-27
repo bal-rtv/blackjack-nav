@@ -12,6 +12,12 @@ const PLAYER_WIN_MSG = "You win!";
 const MARIT_WIN_MSG = "Marit wins!";
 const TIE_MSG = "Its a tie!";
 
+/* module.exports = {
+  calculateHandValue,
+  checkBlackJack,
+  checkWinner,
+}; */
+
 // To initialize the game
 async function initializeGame() {
   // Get a shuffled deck
