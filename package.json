@@ -2,7 +2,6 @@
   "name": "blackjack-nav",
   "version": "1.0.0",
   "description": "simple blackjack game",
-  "main": "script.js",
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
