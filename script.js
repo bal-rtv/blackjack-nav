@@ -6,6 +6,7 @@ var playerHand;
 var maritHand;
 
 // Constants
+const URL = "https://blackjack.ekstern.dev.nav.no/shuffle";
 const BLACKJACK_PTS = 21;
 const TURN_LIMIT = 17;
 const PLAYER_WIN_MSG = "You win!";
@@ -25,11 +26,18 @@ async function initializeGame() {
   playBlackJack();
 }
 
-// Getting shuffled cards from the given API
+/**
+ * Returns a shuffled deck of cards
+ * @returns deck of cards
+ */
 async function getShuffledDeck() {
-  const response = await fetch("https://blackjack.ekstern.dev.nav.no/shuffle");
-  const deck = await response.json();
-  return deck;
+  try {
+    const response = await fetch(URL);
+    const deck = await response.json();
+    return deck;
+  } catch (error) {
+    alert("Something went wrong, while fetching the cards!");
+  }
 }
 
 // Getting a card from top of cards
