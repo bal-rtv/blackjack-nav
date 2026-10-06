@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "parcel index.html",
     "build": "parcel build index.html",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "server": "node server.js"
   },
   "author": "Balendra S",
   "license": "ISC",
@@ -17,6 +18,9 @@
     "parcel-reporter-static-files-copy": "^1.5.3"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "node-fetch": "^2.6.11",
     "parcel-plugin-static-files-copy": "^2.6.0"
   },
   "staticFiles": {
