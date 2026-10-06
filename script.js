@@ -6,7 +6,7 @@ var playerHand;
 var maritHand;
 
 // Constants
-const URL = "https://blackjack.ekstern.dev.nav.no/shuffle";
+const URL = "https://cors-anywhere.herokuapp.com/https://blackjack.ekstern.dev.nav.no/shuffle";
 const BLACKJACK_PTS = 21;
 const TURN_LIMIT = 17;
 const PLAYER_WIN_MSG = "You win!";
